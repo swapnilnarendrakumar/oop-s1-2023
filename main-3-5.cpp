@@ -3,7 +3,7 @@
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern  int sum_even(int array[], int n);
+extern  double sum_even(double array[], int n);
 
 int main() {
     double array[5] = {4,5,6,7,8};
