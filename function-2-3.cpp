@@ -27,7 +27,7 @@ int two_five_nine(int array[], int n){
     }
 
     cout << "2:" << total << ";" << "5:" << total2 << ";" << "9: " << total3 << ";" << endl;
-
+    //na
     return total;
 }
 
