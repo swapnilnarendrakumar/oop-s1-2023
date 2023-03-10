@@ -3,7 +3,7 @@ using namespace std;
 
 //extern int sum_diagonal(int array[4][4]);
 
-int sum_diagonal(int array[4][4]){
+/*int sum_diagonal(int array[4][4]){
     int total = 0;
     for (int i = 0; i < 4; i++) {
 
@@ -14,9 +14,11 @@ int sum_diagonal(int array[4][4]){
         }
     }
     return total;
-}
-int main() {
+}*/
 
+extern  int count_digits(int array[4][4]);
+int main() {
+  
     int numbers[4][4] = {{ 1,2,3,4 },{ 5, 7, 8 ,9},{9,10,11,12},{1,2,3,4}};
     /*
     int total = 0;
@@ -30,8 +32,8 @@ int main() {
     }
     // narendra elp*/
 
-    cout <<  sum_diagonal(numbers) << endl;
+    cout <<  count_digits(numbers) << endl;
 
-
+  
     return 0;
 }
