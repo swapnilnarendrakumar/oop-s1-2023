@@ -1,25 +1,41 @@
-#include <iostream>
-using namespace std;
-// The `extern` keyword tells the compiler that the count function exists,
-// but will be implemented somewhere else
-extern  bool is_ascending(int array[], int n);
-bool is_ascending(int array[], int n){
-    int total = 0;
-    for (int i = 0; i < n - 1; i++){
-		if (array[i] > array[i + 1]) {
-			total =  0;
-		} else {
-        total = 1;
+int array_min(int integers[], int length){
+
+
+    int total = integers[0];
+ 
+
+    for(int i=0; i<length; i++){ 
+        if (integers[i]<total){
+            total = integers[i];
+        }
+
+    
     }
-	} 
-    return total ;
+
+    return total;
 }
 
+int array_max(int integers[], int length){
 
 
+    int total = integers[0];
+ 
 
-int main() {
-    int array[5] = {4,5,6,7,8};
-    cout << "The number is: " << std::boolalpha << is_ascending(array, 5) << endl;
-    return 0;
+    for(int i=0; i<length; i++){ 
+        if (integers[i]>total){
+            total = integers[i];
+        }
+
+    
+    }
+
+    return total;
+}
+
+int sum_min_max(int integers[], int length){
+    int finalsum = 0;
+    //int u = array_min(integers, length);
+    //int y = array_maxt(integers, length);
+    finalsum = array_max(integers, length) +  array_min(integers, length);
+    return finalsum;
 }
