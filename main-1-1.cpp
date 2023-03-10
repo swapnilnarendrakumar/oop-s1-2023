@@ -1,20 +1,27 @@
 #include <iostream>
-
-// The `extern` keyword tells the compiler that the count function exists,
-// but will be implemented somewhere else
-extern int array_sum(int array[], int n);
-extern double array_mean(int array[], int n);
-extern int num_count(int array[], int n, int number);
-extern int sum_two_arrays(int array[], int secondarray[], int n);
-extern int count_evens(int number);
-extern void two_five_nine(int array[], int n);
-extern bool is_ascending(int array[], int n);
-extern  bool is_descending(int array[], int n);
+using namespace std;
 
 
+extern int sum_diagonal(int array[4][4]);
 
 int main() {
-    int array[5] = {4,5,6,7,8};
-    std::cout << "The number is: " << count(array, 5) << std::endl;
+
+    int numbers[4][4] = {{ 1,2,3,4 },{ 5, 7, 8 ,9},{9,10,11,12},{1,2,3,4}};
+    /*
+    int total = 0;
+    for (int i = 0; i < 3; i++) {
+
+        for (int j = 0; j < 3; j++) {
+            if( i == j){
+                total += letters[i][j];
+            }
+        }
+    }
+    // narendra elp*/
+
+    cout <<  sum_diagonal(numbers) << endl;
+
+
     return 0;
 }
+
