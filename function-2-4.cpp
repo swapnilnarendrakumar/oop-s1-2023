@@ -25,12 +25,14 @@ float arithmetic_ops(float left, float right, std::string op){
     }
 
 
+
+
    
 }
 
 float multiply_op(float left, float right){
     float product;
-    subtraction = left * right;
+    product = left * right;
     return product;
 
 }
