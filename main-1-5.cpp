@@ -7,7 +7,7 @@ extern int size_of_array_arr();
 int main(){
     //cout<< hello;
     
-    cout << size_of_array_arr();
+    //cout << size_of_array_arr();
     //int array[7] = {1,2,3,4,5,6,7};
 
     //int x = sizeof(array);
