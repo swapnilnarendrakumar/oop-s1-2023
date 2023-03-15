@@ -1,47 +1,31 @@
-
 #include <iostream>
 using namespace std;
 
-
-
-int array_min(int integers[], int length){
-
-
-    int total = integers[0];
- 
-
-    for(int i=0; i<length; i++){ 
-        if (integers[i]<total){
-            total = integers[i];
-        }
-
-    
-    }
-
-    return total;
+float multiply_op(float left, float right){
+    float x, y, product;
+    float *ptr1, *ptr2;
+    ptr1 = &x; //assigning an address to pointer
+    ptr2 = &y;
+    product = *ptr1 * *ptr2;
+    return product;
 }
 
-int array_max(int integers[], int length){
+float add_op(float left, float right){
+    float x, y, sum;
+    float *ptr1, *ptr2;
+    ptr1 = &x; //assigning an address to pointer
+    ptr2 = &y;
+    sum = *ptr1 + *ptr2;
+    return sum;
 
+}
+float subtract_op(float left, float right){
+    float x, y, subtraction;
+    float *ptr1, *ptr2;
+    ptr1 = &x; //assigning an address to pointer
+    ptr2 = &y;
+    subtraction = *ptr1 - *ptr2;
+    return subtraction;
 
-    int total = integers[0];
- 
-
-    for(int i=0; i<length; i++){ 
-        if (integers[i]>total){
-            total = integers[i];
-        }
-
-    
-    }
-
-    return total;
 }
 
-int sum_min_max(int integers[], int length){
-    int finalsum = 0;
-    //int u = array_min(integers, length);
-    //int y = array_maxt(integers, length);
-    finalsum = array_max(integers, length) +  array_min(integers, length);
-    return finalsum;
-}

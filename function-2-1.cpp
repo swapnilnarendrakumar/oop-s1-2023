@@ -1,30 +1,22 @@
 #include <iostream>
 using namespace std;
 
-
-void print_binary_str(string decimal_number){
-    int num = stoi(decimal_number);
-    int array[32]; int i = 0; 
-
-    while(num > 0){
-		array[i] = num % 2;
-		num = num / 2;
-        i++;
-	}
-    for (i = i - 1; i >= 0; i--)
-        cout << array[i];
-
-
-
-
-
-
-
-
-
-
-
+float add_op(float left, float right){
+    float x, y, sum;
+    float *ptr1, *ptr2;
+    ptr1 = &x; //assigning an address to pointer
+    ptr2 = &y;
+    sum = *ptr1 + *ptr2;
+    return sum;
 
 }
+float subtract_op(float left, float right){
+    float x, y, subtraction;
+    float *ptr1, *ptr2;
+    ptr1 = &x; //assigning an address to pointer
+    ptr2 = &y;
+    subtraction = *ptr1 - *ptr2;
+    return subtraction;
 
+}
 

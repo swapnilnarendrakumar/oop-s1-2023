@@ -1,17 +1,10 @@
 #include <iostream>
 using namespace std;
 
-extern void print_binary_str(string decimal_number);
 
+extern float add_op(float left, float right);
+extern float subtract_op(float left, float right);
 
+int main(){
 
-
-
-int main() {
-    //void print_binary_str(string decimal_number);
-
-     print_binary_str("7");
-
-   
 }
-   
