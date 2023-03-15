@@ -15,14 +15,16 @@ float subtract_op(float left, float right){
 }
 
 float arithmetic_ops(float left, float right, std::string op){
-    
+        
 
     if (op == "+"){
-         cout << left + right;
+         cout <<  left + right;
     }
     if (op == "-"){
-         cout <<left - right;
+         cout << left - right;
     }
+
+    return sum, subtraction;
 
 
 
