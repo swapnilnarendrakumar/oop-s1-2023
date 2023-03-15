@@ -1,17 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//extern int sum_diagonal(int array[4][4]);
+int size_of_variable_star_t(){
+     int *t = new int;
 
-int sum_diagonal(int array[4][4]){
-    int total = 0;
-    for (int i = 0; i < 4; i++) {
-
-        for (int j = 0; j < 4; j++) {
-            if( i == j){
-                total += array[i][j];
-            }
-        }
-    }
-    return total;
+     return sizeof(t);
 }
