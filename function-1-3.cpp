@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "person.h"
+#include "Person.h"
 #include <string.h>
 
 
@@ -19,7 +19,7 @@ using namespace std;
     }
 
     return copy;
-    
+
 
 
 

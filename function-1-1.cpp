@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "person.h"
+#include "Person.h"
 
 Person* createPersonArray(int n){
 
