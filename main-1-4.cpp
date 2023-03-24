@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "Person.h"
+#include <string.h>
 
 extern PersonList shallowCopyPersonList(PersonList pl);
 
@@ -10,7 +11,7 @@ extern PersonList shallowCopyPersonList(PersonList pl);
 int main(){
     PersonList pl;
     int i;
-    int n;
+    int n = 7;
 
 
 
