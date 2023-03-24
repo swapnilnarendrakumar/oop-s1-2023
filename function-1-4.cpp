@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "person.h"
+#include "Person.h"
 
 
 PersonList shallowCopyPersonList(PersonList pl){
@@ -8,6 +8,6 @@ PersonList shallowCopyPersonList(PersonList pl){
     PersonList copy = pl;
 
     return copy;
-    
+
 
 }

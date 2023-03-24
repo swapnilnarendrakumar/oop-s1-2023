@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "person.h"
+#include "Person.h"
 
 
 extern PersonList deepCopyPersonList(PersonList pl);
@@ -33,7 +33,7 @@ int main(){
     deepCopyPersonList(pl);
 
     return 0;
-    
+
 
     //cout << hello;
 
