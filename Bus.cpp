@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "bus.h"
-
+#include "Bus.h"
 
 
 
@@ -20,24 +19,24 @@ int main() {
     int vehicleCount = 0;
 
 
-    /*for (int i = 0; i < Cars; i++) {
+    for (int i = 0; i < Cars; i++) {
         int id;
         cout << "Enter car ID: ";
         cin >> id;
         vehicles[vehicleCount++] = new Car(id);
-    }*/
+    }
     for (int i = 0; i < Buses; i++) {
         int id;
         cout << "Enter bus ID: ";
         cin >> id;
         vehicles[vehicleCount++] = new Bus(id);
     }
-    /*for (int i = 0; i < Motorbikes; i++) {
+    for (int i = 0; i < Motorbikes; i++) {
         int id;
         cout << "Enter motorbike ID: ";
         cin >> id;
         vehicles[vehicleCount++] = new Motorbike(id);
-    }*/
+    }
 
     for (int i = 0; i < totalVehicles; i++) {
         cout << "Vehicle " << vehicles[i]->getID() << " parked for "
