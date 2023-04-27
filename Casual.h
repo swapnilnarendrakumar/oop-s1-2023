@@ -1,12 +1,17 @@
 #include <iostream>
 using namespace std;
 
-class Casual{
-    Casual();            
-    Casual(int payRate);              
-  
+class Casual : public Employee{
+private:
     float hoursWorked[7];                       
-    int dayCount;                       
+    int dayCount;
+
+
+
+
+public:
+    Casual();            
+    Casual(int payRate);                                     
 
     void endWorkDay();
     void work(int mins);

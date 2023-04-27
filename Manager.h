@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Manager{
+class Manager : public Employee{
     Manager();            
     Manager(int payRate);                // Create a Manager with a payRate
  
