@@ -7,6 +7,10 @@ using namespace std;
     int totalMins = 0;
 }*/
 
+Employee(){
+    //nothing
+}
+
 
 Employee::Employee(int payRate){
     this->payRate = payRate;
@@ -17,7 +21,7 @@ Employee::Employee(int payRate){
 
 void Employee::takeABreak(int mins){
 
-    energyLevel = energyLevel + mins * 0.02f;
+    float energyLevel = energyLevel + (mins * 0.02f);
 }
 
 void Employee::work(int mins){
@@ -26,7 +30,7 @@ void Employee::work(int mins){
 }
 
 float Employee::pay(){
-    payRate = totalMins * 0.5f;
+    return totalMins * 0.5f;
 }
 
 
