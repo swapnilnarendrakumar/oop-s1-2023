@@ -10,14 +10,14 @@ using namespace std;
 
 Employee::Employee(int payRate){
     this->payRate = payRate;
-    float energyLevel = 100;
+    float energyLevel = 100.0f;
     int totalMins = 0;
 }
 
 
 void Employee::takeABreak(int mins){
 
-    energyLevel = energyLevel + totalMins;
+    energyLevel = energyLevel + mins * 0.02f;
 }
 
 void Employee::work(int mins){
@@ -26,65 +26,8 @@ void Employee::work(int mins){
 }
 
 float Employee::pay(){
-    payRate = totalMins * 0.5;
+    payRate = totalMins * 0.5f;
 }
 
 
 // void appliance::set_powerRating(int powerRating) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*float Employee::energyLevel{
-
-}
-
-int Employee::totalMins{
-
-}*/
