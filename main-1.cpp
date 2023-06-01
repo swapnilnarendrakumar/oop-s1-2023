@@ -1,7 +1,4 @@
 #include <iostream>
-#include <cmath>
-#include <random>
-#include <tuple>
 using namespace std;
 #include "Effect.h"
 #include "Cell.h"
@@ -9,6 +6,7 @@ using namespace std;
 #include "Trap.h"
 #include "Character.h"
 int main(){
-
+    cout << "This works at least";
 }
+
 

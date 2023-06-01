@@ -2,6 +2,7 @@
 #include <tuple>
 #include <random>
 #include <iostream>
+using namespace std;
 
 #ifndef CELL_H
 #define CELL_H
@@ -9,18 +10,18 @@
 class Cell {
 protected:
 
-    std::tuple<int, int> position;
+    tuple<int, int> position;
 
     char type;
 
 
 public:
     Cell(int x, int y, char type)
-        : position(std::make_tuple(x, y)), type(type) 
+        : position(make_tuple(x, y)), type(type) 
 
         {}
 
-    std::tuple<int, int> getPos() {
+    tuple<int, int> getPos() {
 
 
         return position;
@@ -35,7 +36,7 @@ public:
 
     void setPos(int x, int y) {
 
-        position = std::make_tuple(x, y);
+        position = make_tuple(x, y);
 
 
     }
