@@ -45,13 +45,6 @@ public:
 };
 
 
-class MyEffect : public Effect {
-public:
-    void apply(Cell& cell) {
-        cout << "It works as " <<get<0>(cell.getPos()) << " and "<<get<1>(cell.getPos()) << ")\n";
-
-    }
-};
 
 
 #endif
